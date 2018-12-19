@@ -24,12 +24,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.styl$/,
         // 提取出css
         loaders: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           // 压缩css
-          use: ['css-loader?minimize', 'postcss-loader', 'sass-loader']
+          use: ['css-loader?minimize', 'postcss-loader', 'stylus-loader']
         }),
         include: path.resolve(__dirname, 'src')
       },
