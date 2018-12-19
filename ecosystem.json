@@ -1,0 +1,22 @@
+{
+  "apps" : [{
+    "name"      : "resume",
+    "script"    : "prod.server.js",
+    "env_production" : {
+      "NODE_ENV": "production"
+    }
+  }],
+  "deploy" : {
+    "production" : {
+      "user" : "root",
+      "host" : ["47.94.0.206"],
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:theniceangel/resume.git",
+      "path" : "/home/www/resume",
+      "post-deploy" : "npm install && npm run build && pm2 startOrRestart ecosystem.json --env production",
+      "env"  : {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
