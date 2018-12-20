@@ -103,15 +103,40 @@
               <a class="btn item-more">工作</a>
             </header>
             <div class="item-bd">
-              <p class="item-des">于WebApp 架构组团队参与滴滴出行司机端、乘客端内 H5 的页面开发以及组内或者个人的开源项目开发，包括：</p>
+              <p class="item-des">于 WebApp 架构组团队参与司机端、乘客端内 H5 的页面开发以及组内或者个人的开源项目开发，包括：</p>
               <ul class="section-content">
-                <li><a href="https://didi.github.io/cube-ui/#/zh-CN">cube-ui</a>（组内）</li>
-                <li><a href="https://github.com/ustbhuangyi/better-scroll">better-scroll</a>（黄轶）</li>
+                <li><a href="https://didi.github.io/cube-ui/#/zh-CN">cube-ui</a></li>
+                <li><a href="https://github.com/ustbhuangyi/better-scroll">better-scroll</a></li>
                 <li>司机端贡献分、网约车驾考宝典、司机组队等核心业务的开发</li>
                 <li>乘客端发票国内以及国际化的业务</li>
               </ul>
             </div>
           </div>
+
+          <div class="item">
+            <header class="item-hd">
+              <h3 class="item-name">蘑菇租房(上海)</h3>
+              <span class="item-time">2017.03 至 2017.09</span>
+              <a class="btn item-more">工作</a>
+            </header>
+            <div class="item-bd">
+              <p class="item-des">参与官网的开发</p>
+              <ul class="section-content">
+                <li><a href="https://www.mgzf.com/">蘑菇租房官网</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+              <header class="item-hd">
+                <h3 class="item-name">南昌电信分公司</h3>
+                <span class="item-time">2016.03 至 2017.03</span>
+                <a class="btn item-more">工作</a>
+              </header>
+              <div class="item-bd">
+                <p class="item-des">主要面向事业单位或者政府机关，参与他们项目的前端开发以及学习java，Oracle，mysql 等知识</p>
+              </div>
+            </div>
         </div>
 
       </section>
@@ -130,9 +155,41 @@
             </header>
             <div class="item-bd">
               <ul>
-                <li><a href="https://github.com/didi/cube-ui">cube-ui</a> 基于 Vue.js 实现的精致移动端组件库。利用 webpack 实现 <a href="https://github.com/DDFE/DDFE-blog/issues/23">后编译插件</a>以及按需加载，减少大量冗余代码，并且基于 better-scroll 封装了很多移动端常用的组件，Swiper、Scroll、IndexList、Picker、ImagePreviewer等等，极大地提高了业务的开发效率，而且还提出了 createAPI 的思想，将 component 转化成 js 调用的形式去添加到任意 DOM 节点。</li>
-                <li><a href="https://github.com/ustbhuangyi/better-scroll">better-scroll</a> 目前维护 issue 以及一些 bugfix 的工作。</li>
-                <li>其余的就是司机端一些核心业务的开发，比如贡献分、司机奖励等部分，都是利用 Vuex、Vue-Router 以及 Canvas、SVG 去做一些动画良好的客户端内 h5 页面。</li>
+                <li>
+                  <a class="title" href="https://github.com/didi/cube-ui">cube-ui</a>
+                  <div class="sub">- 实现 tabbar、tab 组件</div>
+                  <div class="sub">- 实现 recycle-list 组件</div>
+                </li>
+                <li>
+                  <a class="title" href="https://github.com/ustbhuangyi/better-scroll">better-scroll</a>
+                  <div class="sub">- 维护 issue</div>
+                  <div class="sub">- 修复 <a href="https://github.com/ustbhuangyi/better-scroll/commits?author=theniceangel">bug</a></div>
+                </li>
+                <li>
+                    <a class="title">司机端贡献分</a>
+                    <div class="sub">- 司机端核心业务服务分重构为贡献分，负责项目的架构设计以及文件结构组织</div>
+                    <div class="sub">- 利用 axios 的 intercept 功能抽取所有接口的共同参数，精简接口调用</div>
+                    <div class="sub">- 利用 Canvas 实现仪表盘的动画、SVG 实现圆形进度条</div>
+                    <div class="sub">- 结合 Vue-Router 实现类 App 的专场效果</div>
+                    <div class="sub">- 基于 cube-ui 的 Picker、Scroll、Slide、Tabbar 等组件快速实现 UI 设计的复杂交互</div>
+                    <div class="sub">- 项目遇到的挑战是在很短时间的排期内，完成四个不同部门的协调沟通，以及学习 Canvas 实现复杂动画</div>
+                </li>
+                <li>
+                    <a class="title">司机端网约车驾考宝典</a>
+                    <div class="sub">- 负责项目的重构</div>
+                    <div class="sub">- 结合 cube-ui 的 Slide 组件解决数据量大的渲染性能问题</div>
+                    <div class="sub">- 项目踩过 Vue 对数组处理的一些坑，钻研了 Vue 源码之后解决了问题，总结出一篇<a href='https://juejin.im/post/5c0dec8be51d451dac076f76'>文章</a>发在掘金</div>
+                </li>
+                <li>
+                    <a class="title">国际化发票</a>
+                    <div class="sub">- 利用 vue i18n 实现国际化</div>
+                    <div class="sub">- 利用 webpack2 以上的 code-splitting 功能对语言包实现分包管理，防止大量语言包冗余</div>
+                </li>
+                <li>
+                    <a class="title" href='https://www.mgzf.com/'>蘑菇租房官网</a>
+                    <div class="sub">- 利用 requirejs 进行模块化的 js 管理</div>
+                    <div class="sub">- 熟练使用原型链、继承、闭包等知识，利用大量的设计模式、比如组合模式、单例模式、发布订阅模式解耦各个模块的依赖</div>
+                </li>
               </ul>
             </div>
           </div>
@@ -144,8 +201,8 @@
             </header>
             <div class="item-bd">
               <ul>
-                <li>熟悉使用 Express</li>
-                <li>维护组内项目的测试环境部署</li>
+                <li>熟悉 Express</li>
+                <li>基于 node-scp2 实现项目的测试环境部署。</li>
               </ul>
             </div>
           </div>
@@ -191,10 +248,10 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>熟知 JS 基本语法与知识，掌握最新 JS 语法与 API</li>
+                <li>熟练掌握原生 JS 并能手写代码，对 JS 闭包、原型、作用域链、继承知识点有深刻地理解并在实际项目中运用</li>
+                <li>精通前端流行框架 Vue</li>
                 <li>掌握网页重构所需的CSS、Stylus</li>
                 <li>掌握 Canvas、SVG</li>
-                <li>掌握前端流行框架Vue</li>
               </ul>
             </div>
           </div>
@@ -207,9 +264,9 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>用 Vue 开发过复杂应用，熟知 Vue 原理与生态技术栈经验丰富</li>
+                <li>熟知 Vue 源码内部以及技术细节</li>
                 <li>掌握 Vue 调试、性能优化等扩展技能</li>
-                <li>研究过 Vue 全家桶的源码，对 Vue 的响应式原理、异步更新策略、组件化的实现等精通，对 Vuex 的<a src="https://theniceangel.github.io/learn-vuex/">内部实现原理</a>熟知，Vue-Router 的<a src="https://theniceangel.github.io/learn-vue-router/">整体流程</a>也有很好的了解。</li>
+                <li>研究过 Vue 全家桶的源码，对 Vue 的响应式原理、异步更新策略、组件化的实现等精通，对 Vuex 的<a href="https://theniceangel.github.io/learn-vuex/">内部实现原理</a>熟知，Vue-Router 的<a href="https://theniceangel.github.io/learn-vue-router/">整体流程</a>也有很好的了解。</li>
               </ul>
             </div>
           </div>
@@ -249,60 +306,18 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>平常工作利用 charles 进行抓包，代理等自测回归或者线上回归、线上测试等工作。</li>
-                <li>掌握 HTTP 的一些基础知识</li>
+                <li>熟练使用 charles 抓包、代理、改写请求</li>
               </ul>
             </div>
           </div>
-
-          <!--开发-->
-          <div class="item">
-            <header class="item-hd">
-              <span class="item-time">日常开发</span>
-              <a class="btn item-more">熟练</a>
-            </header>
-            <div class="item-bd">
-              <ul class="section-content">
-                <li>利用 Vconsole 进行移动端的调试</li>
-                <li>利用 Mockjs 来进行 mock 接口的服务</li>
-              </ul>
-            </div>
-          </div>
-
-          <!--数据库-->
-          <div class="item">
-            <header class="item-hd">
-              <span class="item-time">数据库</span>
-              <a class="btn item-more">掌握</a>
-            </header>
-            <div class="item-bd">
-              <ul class="section-content">
-                <li>之前写过 MySQL、Oracle、MongoDB 的 sql 语句，不过已经很久没写了。</li>
-              </ul>
-            </div>
-          </div>
-
-          <!--数据库-->
-          <div class="item">
-            <header class="item-hd">
-              <span class="item-time">nginx</span>
-              <a class="btn item-more">简单使用</a>
-            </header>
-            <div class="item-bd">
-              <ul class="section-content">
-                <li>学习过 nginx 起静态服务器以及利用 upstream 模块进行均衡负载指向 node 起的应用。<a href="https://www.babyzhi.cn/">个人网站</a>就是利用这个原理搭建的，并且利用 Cerbot 将 http 升级为 https</li>
-              </ul>
-            </div>
-          </div>
-
           <!--特点-->
           <div class="item">
               <header class="item-hd">
-                <span class="item-time">个性</span>
+                <span class="item-time">个人概况</span>
               </header>
               <div class="item-bd">
                 <ul class="section-content">
-                  <li>喜欢研究框架底层的实现，爱上了记录、分享的习惯。追求技术细节，笃信技术改变人生</li>
+                  <li>喜欢研究框架底层的实现，爱上了记录、分享的习惯。追求技术细节，笃信技术改变人生。喜欢有技术有追求的团队。</li>
                 </ul>
               </div>
             </div>
